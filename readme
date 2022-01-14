@@ -6,10 +6,9 @@ It will take "MD-flavored" files and make them in to simple HTML
 
 Install
 ```
-cd project
 mkdir modules
 cd modules
-git clone https://github.com/imlinus/site-generator.git
+git submodule add https://github.com/imlinus/site-generator.git
 ```
 
 site-generator.config.js
