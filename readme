@@ -1,0 +1,40 @@
+█▀ ▀ ▀█▀ █▀█    █▀▀ █▀█ █▀▄ █▀█ █▀█ ▄▀█ ▀█▀ █▀█ █▀█
+▄█ █  █  █▄▄ ▀▀ █▄█ █▄▄ █ █ █▄▄ █   █▀█  █  █▄█ █
+
+Just a basic no-thrills site-generator
+It will take "MD-flavored" files and make them in to simple HTML
+
+Install
+```
+cd project
+mkdir modules
+cd modules
+git clone https://github.com/imlinus/site-generator.git
+```
+
+site-generator.config.js
+```
+import SiteGenerator from './modules/site-generator/source/index.js'
+
+new SiteGenerator({
+  root: '',
+  pages: 'pages',
+  posts: 'posts',
+  build: 'build',
+  feed: {}
+})
+```
+
+Basic structure
+```
+/templates
+  page.html
+  post.html
+/pages
+  index
+  about
+/posts
+  2021-12-31-example
+```
+
+See https://github.com/imlinus/personal for an example in action
